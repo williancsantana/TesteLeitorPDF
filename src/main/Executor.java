@@ -15,16 +15,22 @@ public class Executor {
 		// TODO Auto-generated method stub
 		System.out.println("Olá mundo");
 		File arquivo;
-		LeitorPDF leitorPDF;
-		arquivo = new File("C:\\Users\\03777454133\\Downloads\\main.pdf");
+		String filePath;
+		//filePath = "C:\\Users\\03777454133\\Downloads\\RelatorioIRA.pdf";
+		filePath = "C:\\Users\\03777454133\\Downloads\\main.pdf";
+		LeitorPDF leitorPDF = null;
+		arquivo = new File(filePath);
 		System.out.println("Arquivo: "+arquivo.getPath());
 		try{
 			leitorPDF = new LeitorPDF(arquivo);
+			System.out.println("Arquivo PDF aberto com sucesso! \nConteudo do arquivo PDF: ");
+			System.out.println(leitorPDF.getConteudoPDF());
 		}
 		catch(Exception ex){
 			ex.printStackTrace();
 		}
 		finally{
+			leitorPDF.getDocument().close();
 			System.out.println("Finalização do programa.");
 		}
 		
