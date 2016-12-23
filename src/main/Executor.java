@@ -16,8 +16,8 @@ public class Executor {
 		String filePath,conteudo="";
 		String busca;
 		Scanner sc = new Scanner(System.in);
-		//filePath = "C:\\Users\\03777454133\\Downloads\\RelatorioIRA.pdf";
-		filePath = "C:\\Users\\03777454133\\Downloads\\main.pdf";
+		filePath = "C:\\Users\\03777454133\\Downloads\\RelatorioIRA.pdf";
+		//filePath = "C:\\Users\\03777454133\\Downloads\\main.pdf";
 		LeitorPDF leitorPDF = null;
 		arquivo = new File(filePath);
 		System.out.println("Arquivo: "+arquivo.getPath());

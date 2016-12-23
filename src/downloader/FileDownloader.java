@@ -19,7 +19,7 @@ public class FileDownloader {
 			uri = "http://diariooficial.to.gov.br/sistema/diario/3214/download";
 			URL url = new URL(uri);
 			//file = new File("google.gif");
-			file = new File("diario.pdf");
+			file = new File("pastadownloads/diario.pdf");
 			OutputStream out = new FileOutputStream(file, false);
 			//uri = "http://www.google.com.br/intl/pt-BR_br/images/logo.gif";
 			URLConnection conn = url.openConnection();
